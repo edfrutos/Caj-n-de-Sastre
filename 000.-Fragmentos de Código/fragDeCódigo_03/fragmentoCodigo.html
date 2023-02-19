@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Fragmento Código</title>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js"></script>
+<link
+  href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./fragmentoCodigo.css">
+</head>
+<body>
+  <div id="code-window">
+    <div id="code-header">
+      <span>HTML</span>
+      <button type="button" id="copy-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard" width="24"
+            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"></path>
+            <path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z"></path>
+        </svg>
+        
+  
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+      <!--Comienzo introducción código entre los script-->
+      <script>
+        <div id="code-window">
+          <div id="code-header">
+            <span>HTML</span>
+            <button id="copy-btn">Copy</button>
+          </div>
+          <pre><code id="code-input" class="language-markup"></code></pre>
+        </div>
+      </script>
+     <!--Final de introducción de código-->
+    </code></pre>
+  </div>
+  </body>
+<script src="./fragmentoCodigo.js"></script>
+</html>
+

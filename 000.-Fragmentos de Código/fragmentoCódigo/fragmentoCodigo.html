@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventana Fragmento Código</title>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+  <link rel="stylesheet" href="./fragmentoCodigo.css">
+</head>
+<body>
+  <div id="code-window">
+    <div id="code-header">
+      <span>HTML</span>
+      <button type="button" id="copy-btn">
+        <svg 
+        stroke="currentColor"
+        fill="none"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-4 w-4"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+        ></path> 
+        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+        <!--
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+        </svg>-->
+        <span>Copiar código</span>
+      </button>
+    </div>
+    <pre><code id="code-input" class="language-html">
+      <!--Comienzo introducción código entre los script-->
+      <script></script>
+     <!--Final de introducción de código-->
+    </code></pre>
+  </div>
+</body>
+<script src="./fragmentoCodigo.js"></script>
+</html>

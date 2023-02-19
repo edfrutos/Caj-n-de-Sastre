@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism.css" />
+    <style>
+
+      .code-container {
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .code-header {
+        background-color: #87CEEB; /* Azul clarito */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        border-radius: 5px 5px;
+        padding: .5rem;
+      }
+      .code-title {
+        font-weight: bold;
+      }
+
+      .copy-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #2196f3;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .copy-icon {
+        fill: #fff;
+        height: 1rem;
+        margin-right: 0.5rem;
+      }
+      .code-box {
+        overflow: auto;
+        padding: 1rem;
+        background-color: #5a80a5;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="code-container">
+      <div class="code-header">
+        <div class="code-title">
+          Código
+        </div>
+        <div class="copy-button">
+          <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M10 0C4.47 0 0 4.47 0 10s4.47 10 10 10 10-4.47 10-10S15.53 0 10 0zM9 17H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V7h2v2zm5 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"/>
+          </svg>
+          Copiar Código
+        </div>
+      </div>
+      <pre class="code-box language-html">
+        <code>
+            <script>
+                <html></html>
+            </script>
+
+        </code>
+      </pre>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.js"></script>
+    <script>
+      const copyButton = document.querySelector('.copy-button');
+      copyButton.addEventListener('click', () => {
+      const codeContainer = document.querySelector('.code-box');
+      const code = codeContainer.textContent;
+      navigator.clipboard.writeText(code).then(() => {
+      alert('Código copiado al portapapeles');
+      });
+      });
+      </script>
+
+        </body>
+      </html>
