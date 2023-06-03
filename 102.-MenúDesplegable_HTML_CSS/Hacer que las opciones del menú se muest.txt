@@ -1,0 +1,43 @@
+Hacer que las opciones del menú se muestren en línea utilizando CSS. 
+Aquí te muestro un ejemplo básico de código HTML, CSS y JavaScript:
+
+HTML:
+
+<nav>
+  <ul>
+    <li><a href="#">Opción 1</a></li>
+    <li><a href="#">Opción 2</a></li>
+    <li><a href="#">Opción 3</a></li>
+  </ul>
+</nav>
+CSS:
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+}
+JavaScript (opcional):
+
+javascript
+Copy code
+// opcional, para añadir interacción con JavaScript
+const menu = document.querySelector("nav ul");
+menu.addEventListener("click", function(event) {
+  console.log(event.target.textContent);
+});
+En el código CSS, estamos utilizando la propiedad display: flex en el nav ul para 
+hacer que los elementos li dentro de él se muestren en línea. Además, la propiedad 
+justify-content: space-between asegura que los elementos se distribuyan equitativamente 
+dentro del contenedor nav.
+
+También estamos utilizando la propiedad display: inline-block en los elementos li para 
+hacer que se muestren en línea, y que ocupen el ancho necesario para su contenido.
+
+El código JavaScript es opcional y se utiliza para añadir interacción al menú. En este caso, 
+estamos añadiendo un evento de "click" al menú y mostrando en la consola el texto del elemento 
+clicado.

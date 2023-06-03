@@ -1,0 +1,78 @@
+/* Estilos para el h3 */
+h3 {
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+/* Estilos para la ventana */
+.window {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #ccc;
+  overflow: hidden;
+  width: 70%;
+  margin: 50px auto;
+}
+
+/* Estilos para el encabezado */
+.header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+}
+
+/* Estilos para el botón de copiar */
+.copy-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 0 5px 0 5px;
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+/* Estilos para el estado :hover del botón de copiar */
+.copy-button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Estilos para el estado :active del botón de copiar */
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+/* Estilos para el icono de copiar */
+.copy-button svg {
+  fill: #fff;
+  height: 20px;
+  margin-right: 5px;
+  transition: all 0.2s;
+  width: 20px;
+}
+
+/* Estilos para el estado :hover del icono de copiar */
+.copy-button:hover svg {
+  fill: #333;
+}
+
+/* Estilos para el contenido de texto sin formato */
+.content {
+  padding: 10px;
+}
+
+/* Estilos para ajustar la responsividad */
+@media (max-width: 600px) {
+  .window {
+    width: 90%;
+  }
+}
